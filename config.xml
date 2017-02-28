@@ -41,5 +41,6 @@
         <gap:plugin name="cordova-plugin-dialogs" source="npm"/>
         <gap:plugin name="cordova-plugin-geolocation" source="npm"/>    -->
 
+ <engine name="android" spec="~5.0.0" />       
        
     </widget>
