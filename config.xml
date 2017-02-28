@@ -8,7 +8,7 @@
 
         <!-- versionCode is optional and Android only -->
 
-        <preference name="phonegap-version" value="3.7.0" />
+   <!--     <preference name="phonegap-version" value="3.7.0" />-->
 
         <name>Subir Foto</name>
 
@@ -22,14 +22,21 @@
 
         <access origin="*" />
 
-        <preference name="android-build-tool" value="gradle" />
 
-        <!-- Plugins -->
 
+<preference name="phonegap-version" value="cli-5.2.0" />
+<preference name="android-minSdkVersion" value="14" />
+<preference name="android-maxSdkVersion" value="23" />
+<preference name="android-build-tool" value="gradle" />
+<plugin name="cordova-plugin-whitelist" />
 <gap:plugin name="cordova-plugin-admobpro" source="npm" />
-        <gap:plugin name="cordova-plugin-camera" source="npm"/>    
-                <gap:plugin name="cordova-plugin-file-transfer" source="npm"/>    
 
+        <!--
+        <preference name="android-build-tool" value="gradle" />
+        <gap:plugin name="cordova-plugin-admobpro" source="npm"/>
+        <gap:plugin name="cordova-plugin-camera" source="npm"/>    
+        <gap:plugin name="cordova-plugin-file-transfer" source="npm"/>    
+-->
 <!--        <gap:plugin name="cordova-plugin-network-information" source="npm"/>
         <gap:plugin name="cordova-plugin-dialogs" source="npm"/>
         <gap:plugin name="cordova-plugin-geolocation" source="npm"/>    -->
