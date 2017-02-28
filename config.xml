@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "B8XMY8CUMW.subirfoto"
+        version     = "1.0.0"
+        versionCode = "1" >
+
+        <!-- versionCode is optional and Android only -->
+
+        <preference name="phonegap-version" value="3.7.0" />
+
+        <name>Subir Foto</name>
+
+
+        <author href="http://yoursite.com" email="you@youremail.com">
+        Yo
+        </author>
+        
+
+        <icon src="icon.png" />
+
+        <access origin="*" />
+
+        <!-- Plugins -->
+
+        <gap:plugin name="cordova-plugin-camera" source="npm"/>    
+                <gap:plugin name="cordova-plugin-file-transfer" source="npm"/>    
+
+<!--        <gap:plugin name="cordova-plugin-network-information" source="npm"/>
+        <gap:plugin name="cordova-plugin-dialogs" source="npm"/>
+        <gap:plugin name="cordova-plugin-geolocation" source="npm"/>    -->
+
+       
+    </widget>
