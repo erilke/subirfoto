@@ -5,16 +5,6 @@
  <script type="text/javascript" src="phonegap.js"></script>
  <script type="text/javascript">
 
-var pictureSource;   // picture source
-var destinationType; // sets the format of returned value
-
-document.addEventListener("deviceready", onDeviceReady, false);
-
-function onDeviceReady() {
-pictureSource = navigator.camera.PictureSourceType.FILE_URI;
-destinationType = navigator.camera.DestinationType.PHOTOLIBRARY;
-}
-
 function clearCache() {
 navigator.camera.cleanup();
 }
@@ -57,7 +47,8 @@ ft.upload(fileURI, encodeURI("http:/idmon.com.mx/phonegap/upload/upload3.php"), 
 function capturePhoto() {
 navigator.camera.getPicture(onCapturePhoto, onFail, {
     quality: 100,
-    destinationType: destinationType.FILE_URI
+    destinationType: navigator.camera.DestinationType.FILE_URI,
+    sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
 });
 }
 
