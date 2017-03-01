@@ -2,7 +2,7 @@
 <html>
 <head>
  <title>File Transfer Example</title>
- <script type="text/javascript" src="cordova.js"></script>
+ <script type="text/javascript" src="phonegap.js"></script>
  <script type="text/javascript">
  function getImage() {
  navigator.camera.getPicture(uploadPhoto, function(message) {
@@ -19,7 +19,10 @@ function uploadPhoto(imageURI) {
  options.fileKey = "file";
  options.fileName = imageURI.substr(imageURI.lastIndexOf('/') + 1);
  options.mimeType = "image/jpeg";
- console.log(options.fileName);
+ //console.log(options.fileName);
+alert(options.fileName);
+
+
  var params = new Object();
  params.value1 = "test";
  params.value2 = "param";
