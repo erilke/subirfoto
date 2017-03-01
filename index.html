@@ -26,11 +26,17 @@ function uploadPhoto(imageURI) {
  options.params = params;
  options.chunkedMode = false;
 
+
+alert("hasta aquí todo bien")
 var ft = new FileTransfer();
  ft.upload(imageURI, "http://idmon.com.mx/phonegap/upload/upload.php", function(result){
- console.log(JSON.stringify(result));
+ //console.log(JSON.stringify(result));
+
+alert(results);
  }, function(error){
- console.log(JSON.stringify(error));
+ //console.log(JSON.stringify(error));
+alert(error);
+
  }, options);
  }
  </script>
