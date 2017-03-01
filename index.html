@@ -5,13 +5,6 @@
     <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
     <script type="text/javascript" charset="utf-8">
  
-        // Wait for PhoneGap to load
-        document.addEventListener("deviceready", onDeviceReady, false);
- 
-        // PhoneGap is ready
-        function onDeviceReady() {
- 		// Do cool things here...
-        }
  
         function getImage() {
             // Retrieve image file location from specified source
@@ -40,13 +33,13 @@
             options.chunkedMode = false;
  
             var ft = new FileTransfer();
-            ft.upload(imageURI, "http://yourdomain.com/upload.php", win, fail, options);
+            ft.upload(imageURI, "http://idmon.com.mx/phongap/upload/upload.php", win, fail, options);
         }
  
         function win(r) {
-            console.log("Code = " + r.responseCode);
-            console.log("Response = " + r.response);
-            console.log("Sent = " + r.bytesSent);
+            //console.log("Code = " + r.responseCode);
+            //console.log("Response = " + r.response);
+            //console.log("Sent = " + r.bytesSent);
             alert(r.response);
         }
  
