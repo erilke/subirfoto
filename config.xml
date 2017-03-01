@@ -18,8 +18,8 @@
 <gap:plugin name="cordova-plugin-file-transfer" source="npm"/>   -->
 
 <preference name="phonegap-version" value="3.7.0" />
-<gap:plugin name="cordova-plugin-camera" version="1.2.0"  source="pgb"/>    
-<gap:plugin name="cordova-plugin-file-transfer" version="0.5.0" source="pgb"/>
+<gap:plugin name="cordova-plugin-camera" spec="1.2.0"  source="pgb"/>    
+<gap:plugin name="cordova-plugin-file-transfer" spec="0.5.0" source="pgb"/>
 
         <name>Subir Foto</name>
 
