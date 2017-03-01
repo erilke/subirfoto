@@ -32,10 +32,10 @@ var ft = new FileTransfer();
  ft.upload(imageURI, "http://idmon.com.mx/phonegap/upload/upload.php", function(result){
  //console.log(JSON.stringify(result));
 
-alert(results);
+alert("enviado según");
  }, function(error){
  //console.log(JSON.stringify(error));
-alert(error);
+alert("hubo un error");
 
  }, options);
  }
