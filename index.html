@@ -22,15 +22,17 @@ function uploadPhoto(imageURI) {
  //console.log(options.fileName);
 alert(options.fileName);
 
-
+/*
  var params = new Object();
  params.value1 = "test";
  params.value2 = "param";
  options.params = params;
+*/
+
  options.chunkedMode = false;
 
 
-alert("hasta aquí todo bien")
+
 var ft = new FileTransfer();
  ft.upload(imageURI, "http://idmon.com.mx/phonegap/upload/upload.php", function(result){
  //console.log(JSON.stringify(result));
