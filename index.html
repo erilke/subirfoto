@@ -39,10 +39,10 @@ alert("bien");
  ft.upload(imageURI, "http://idmon.com.mx/phonegap/upload/upload.php", function(result){
  //console.log(JSON.stringify(result));
 
-alert("enviado según");
+alert(JSON.stringify(result));
  }, function(error){
  //console.log(JSON.stringify(error));
-alert("hubo un error");
+alert(JSON.stringify(error));
 
  }, options);
  }
