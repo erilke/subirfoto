@@ -18,8 +18,8 @@
 <gap:plugin name="cordova-plugin-file-transfer" source="npm"/>   -->
 
 <preference name="phonegap-version" value="3.7.0" />
-<!--<gap:plugin name="cordova-plugin-camera" spec="1.2.0"  source="npm"/>    -->
-<gap:plugin name="cordova-plugin-camera" spec="2.1.0"  source="npm"/>    
+<gap:plugin name="cordova-plugin-camera" spec="1.2.0"  source="npm"/>    
+<!--<gap:plugin name="cordova-plugin-camera" spec="2.1.0"  source="npm"/>    -->
 <!--<gap:plugin name="cordova-plugin-file-transfer" spec="0.5.0" source="npm"/>-->
 <gap:plugin name="cordova-plugin-file-transfer" source="npm"/>
 
