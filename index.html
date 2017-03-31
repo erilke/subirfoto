@@ -4,6 +4,9 @@
  <title>File Transfer Example</title>
  <script type="text/javascript" src="phonegap.js"></script>
  <script type="text/javascript">
+
+ var imaURI;
+
  function getImage() {
  navigator.camera.getPicture(uploadPhoto, function(message) {
  alert('get picture failed');
@@ -24,13 +27,14 @@ function uploadPhoto(imageURI) {
 
     var imagen = document.getElementById('myImage');
     imagen.src = imageURI;
+    imaURI=imageURI;
 }
 
-/*
-function uploadPhoto(imageURI) {
+
+function uploadImage() {
  var options = new FileUploadOptions();
  options.fileKey = "file";
- options.fileName = imageURI.substr(imageURI.lastIndexOf('/') + 1);
+ options.fileName = imaURI.substr(imageURI.lastIndexOf('/') + 1);
  options.mimeType = "image/jpeg";
  //console.log(options.fileName);
 alert(options.fileName);
@@ -60,7 +64,7 @@ alert(JSON.stringify(error));
  }, options);
  }
  
-*/
+
 
  </script>
 
@@ -69,7 +73,12 @@ alert(JSON.stringify(error));
 
 </head>
 <body>
- <button onclick="getImage();">Upload a Photo</button>
- <img id="myImage" src="" />
+ <button onclick="getImage();">Tomar una foto</button>
+ <div>
+ 	 <img id="myImage" src="" />
+ </div>
+
+
+  <button onclick="uploadImage();">Enviar foto a servidor</button>
 </body>
 </html>
