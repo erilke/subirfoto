@@ -37,7 +37,7 @@ function uploadImage() {
 	    alert(imaURI);
  var options = new FileUploadOptions();
  options.fileKey = "file";
- options.fileName = imaURI.substr(imageURI.lastIndexOf('/') + 1);
+ options.fileName = imaURI.substr(imaURI.lastIndexOf('/') + 1);
  options.mimeType = "image/jpeg";
  //console.log(options.fileName);
 alert(options.fileName);
